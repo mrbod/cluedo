@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[swedish]{babel}
 \usepackage{amssymb}
+\usepackage{framed}
  
 \begin{document}
 
@@ -11,10 +12,14 @@
 \newenvironment{categories} {
 \newcommand{\cat}[1]{ \item[ {\large ##1} ] }
 \newcommand{\sub}[1]{ \hfill \\ {\small $\square$ $\square$ $\square$ ##1} }
+    \begin{framed}
+    \textbf{DETEKTIVENS ANTECKNINGAR}
     \begin{description}
 }{
     \end{description}
+    \end{framed}
 }
+
 
 \begin{categories}
 \cat{Misstänkta personer}
