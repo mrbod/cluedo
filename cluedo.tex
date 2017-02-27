@@ -1,0 +1,49 @@
+\documentclass[a5paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{amssymb}
+ 
+\begin{document}
+
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\newenvironment{categories} {
+\newcommand{\cat}[1]{ \item[ {\large ##1} ] }
+\newcommand{\sub}[1]{ \hfill \\ {\small $\square$ $\square$ $\square$ ##1} }
+    \begin{description}
+}{
+    \end{description}
+}
+
+\begin{categories}
+\cat{Misstänkta personer}
+\sub{Överste Senap}
+\sub{Professor Plommon}
+\sub{Pastor Grön}
+\sub{Fru Blå}
+\sub{Fröken Röd}
+\sub{Fru Vit}
+
+\cat{Möjliga redskap}
+\sub{Dolk}
+\sub{Ljusstake}
+\sub{Pistol}
+\sub{Rep}
+\sub{Blyrör}
+\sub{Skruvnyckel}
+
+\cat{Möjlig plats}
+\sub{Hall}
+\sub{Vardagsrum}
+\sub{Matsal}
+\sub{Kök}
+\sub{Finrum}
+\sub{Galleri}
+\sub{Biljardrum}
+\sub{Bibliotek}
+\sub{Arbetsrum}
+\end{categories}
+
+\end{document}
+
